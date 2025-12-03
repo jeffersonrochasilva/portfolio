@@ -1,0 +1,28 @@
+.presentation{
+  width: calc(100% - 160px);
+  height: auto;
+  min-height: 400px;
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presentation-content{
+  width: 50%;
+  height: auto;
+  min-height: 450px;
+  padding-bottom: 45px;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.presentation-text{
+    font-size: 18px;
+  color: gray;
+  font-family: "Arial", sans-serif;
+  text-align: start; 
+}

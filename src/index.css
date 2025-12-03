@@ -1,0 +1,49 @@
+:root {
+ background: #131F24;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  place-items: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.containers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titles{
+  font-size: 30px;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+.texts{
+    font-size: 18px;
+  color: gray;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+button {
+transition: transform 0.3s ease;
+
+}
+button:hover {
+  /* border-color: #646cff; */
+    background-color: #0d8ecf;
+   transform: scale(1.2);
+}
+button:focus,
+button:focus-visible {
+  /* outline: 4px auto -webkit-focus-ring-color; */
+}
+
+
