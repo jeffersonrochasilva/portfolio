@@ -10,7 +10,7 @@ body {
   place-items: center;
 }
 
-h1 {
+h1 , p , span, a{
   margin: 0;
   padding: 0;
 }
@@ -18,8 +18,14 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
+li{
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 5px
+}
 .titles{
   font-size: 30px;
   color: #fff;
@@ -34,6 +40,9 @@ h1 {
 
 button {
 transition: transform 0.3s ease;
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
 button:hover {

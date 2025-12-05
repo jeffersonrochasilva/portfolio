@@ -1,4 +1,5 @@
 import image from "../../../public/Assunto.jpg";
+import { FaArrowRight } from "react-icons/fa";
 import "./initial.css";
 const Initial = () => {
   return (
@@ -15,7 +16,7 @@ const Initial = () => {
           onClick={() => alert("ainda Nào está pronto")}
           className="button"
         >
-          Conheça meus projetos
+          Conheça meus projetos <FaArrowRight style={{ marginLeft: "10px" }} />
         </button>
       </div>
       <div className="image-box">

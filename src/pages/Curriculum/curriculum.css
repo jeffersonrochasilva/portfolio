@@ -1,0 +1,62 @@
+.curriculum-cotnainer {
+  width: 100%;
+  min-height: 200px;
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 50px;
+  /* background : red */
+}
+
+.curriculum-info {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.curriculum-text {
+  color: #ff9602;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.curriculum-card-one {
+  max-width: 70%;
+  width: 800px;
+  min-height: 90px;
+  padding: 20px;
+  border: 1px solid rgba(214, 213, 213, 0.467);
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.curriculum-title-card{
+font-family: sans-serif;
+font-weight: bold;
+margin-left: 10px;
+font-size: 20px;
+color: gray
+}
+.curriculum-content-card{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.curriculum-text-card{
+  color: #ff9602;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.curriculum-experience-title {
+  
+}
