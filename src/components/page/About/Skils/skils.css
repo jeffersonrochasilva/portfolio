@@ -1,11 +1,11 @@
-.skils{
-width: calc(100% -80px);
-height: auto;
-padding: 40px;
-background: #fff;
+.skils {
+  width: calc(100% -80px);
+  height: auto;
+  padding: 40px;
+  background: #fff;
 }
 
-.skils-content{
+.skils-content {
   width: 100%;
   gap: 20px;
   display: flex;

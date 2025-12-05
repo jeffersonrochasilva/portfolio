@@ -1,4 +1,5 @@
 import CardProject from "../commom/CardProject";
+import { FaArrowRight } from "react-icons/fa";
 import "./projects.css";
 const Projects = () => {
   return (
@@ -22,7 +23,9 @@ const Projects = () => {
           text="Projeto criado para controlar andamentos de processos, entrada e conclusão."
         />{" "}
       </div>
-      <button className="button">Ver todos os projetos</button>
+      <button className="button">
+        Ver todos os projetos <FaArrowRight style={{ marginLeft: "10px" }} />
+      </button>
     </div>
   );
 };

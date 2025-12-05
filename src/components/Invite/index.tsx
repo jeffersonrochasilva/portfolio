@@ -1,4 +1,6 @@
 import "./invite.css";
+import { FaArrowRight } from "react-icons/fa";
+
 const Invite = () => {
   return (
     <div className="invite">
@@ -8,7 +10,9 @@ const Invite = () => {
           Estou disponível para projetos freelance, oportunidades de trabalho ou
           simplesmente para trocar ideias sobre desenvolvimento web/Mobile.
         </p>
-        <button className="button">Entre em contato</button>
+        <button className="button">
+          Entre em contato <FaArrowRight style={{ marginLeft: "10px" }} />
+        </button>
       </div>
     </div>
   );

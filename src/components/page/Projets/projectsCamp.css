@@ -1,0 +1,23 @@
+.projectsCamp{
+  width: calc(100% - 80px);
+  height: auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projectsCamp-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.projectsCamp-cards{
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px
+}

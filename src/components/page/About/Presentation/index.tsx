@@ -1,4 +1,5 @@
 import "./presentation.css";
+import { FaArrowRight } from "react-icons/fa";
 import image from "../../../../assets/logo3.png";
 const Presentation = () => {
   return (
@@ -19,7 +20,10 @@ const Presentation = () => {
           possa aplicar meus conhecimentos, crescer profissionalmente e
           contribuir com projetos que gerem impacto real.
         </p>
-        <button className="button">Entre em contato</button>
+        <button className="button">
+          Entre em contato
+          <FaArrowRight style={{ marginLeft: "10px" }} />
+        </button>
       </div>
       <div className="image-box">
         <div className="box one" style={{ background: "#58CC04" }} />
