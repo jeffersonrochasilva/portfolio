@@ -11,7 +11,7 @@
   height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
 }
 
@@ -69,4 +69,23 @@
   z-index: 99px;
   right: 160px;
 top: 60px
+}
+
+@media (max-width: 960px) {
+  .initial{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+    width: 100% !important;
+  }
+.content-initial {
+  width: 90%;
+height: 400px;
+}
+.image-intial {
+right: 5%;
+}
+  /* .image-box {
+display: none;
+  } */
 }

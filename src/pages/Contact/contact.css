@@ -1,0 +1,126 @@
+.creative-contact {
+  position: relative;
+  /* min-height: 100vh; */
+  background: #0f0f14;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  color: #fff;
+}
+
+/* BACKGROUND SHAPES */
+.background-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.shape-1 {
+  width: 400px;
+  height: 400px;
+  background: #0d8ecf;
+  top: -100px;
+  left: -100px;
+}
+
+.shape-2 {
+  width: 500px;
+  height: 500px;
+  background: #58cc04;
+  bottom: -150px;
+  right: -150px;
+}
+
+/* MAIN CONTAINER */
+.contact-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* TEXT SIDE */
+.contact-text h1 {
+  font-size: 39px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.contact-text span {
+  background: linear-gradient(90deg, #0d8ecf, #58cc04);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-text p {
+  font-size: 18px;
+  color: #b0b0b0;
+  max-width: 500px;
+}
+
+/* FORM CARD */
+.contact-card {
+  /* background: rgba(255, 255, 255, 0.05); */
+  /* backdrop-filter: blur(20px); */
+  /* border: 1px solid rgba(255, 255, 255, 0.08); */
+  padding: 40px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.contact-card input,
+.contact-card textarea {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+  outline: none;
+  border-color: #0d8ecf;
+  box-shadow: 0 0 0 3px rgba(13, 142, 207, 0.2);
+}
+
+/* .contact-card button {
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #0d8ecf, #58cc04);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+} */
+
+.contact-card button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(13, 142, 207, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .contact-text h1 {
+    font-size: 36px;
+  }
+}

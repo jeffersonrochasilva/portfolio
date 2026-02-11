@@ -36,3 +36,45 @@
   object-fit: cover;
 border-radius: 50px;
 }
+.menu-mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+  align-items: center;
+  background: white;
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  width: 150px;
+  height: 200px;
+  padding: 20px;
+  z-index: 89;
+}
+.menu-mobile span{
+  transition: transform 0.3s ease;
+
+  z-index: 99;
+color: gray;
+}
+.menu-mobile span:hover{
+color: orange;
+transform: scale(1.2);
+}
+
+@media (min-width: 550px) {
+.icon-menu {
+  display: none;
+}
+
+
+}
+@media (max-width: 550px) {
+
+  .contentleque{
+  justify-content: flex-end;
+}
+.contentleque span {
+  display: none;
+}
+}

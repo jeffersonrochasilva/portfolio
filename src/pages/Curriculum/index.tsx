@@ -1,5 +1,3 @@
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 import { BiUser, BiFile, BiBook } from "react-icons/bi";
 import { GrPersonalComputer } from "react-icons/gr";
 import { FaUniversity, FaDownload } from "react-icons/fa";
@@ -11,7 +9,6 @@ const Curriculum = () => {
   };
   return (
     <div className="containers">
-      <Header />
       <button
         onClick={() => dowonloadCurriculum()}
         className="button"
@@ -20,7 +17,9 @@ const Curriculum = () => {
         Baixar meu curriculo <FaDownload style={{ marginLeft: "10px" }} />
       </button>
       <div className="curriculum-cotnainer">
-        <span className="titles">JEFFERSON ROCHA DA SILVA</span>
+        <span className="titles" style={{ padding: "0 10px" }}>
+          JEFFERSON ROCHA DA SILVA
+        </span>
         <div className="curriculum-info">
           <p className="texts">
             São Paulo - São Paulo - (11) 91770-6038 - 32 anos, casado
@@ -151,7 +150,6 @@ const Curriculum = () => {
         </div>
       </div>
       <Invite />
-      <Footer />
     </div>
   );
 };

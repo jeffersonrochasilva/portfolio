@@ -1,7 +1,6 @@
 .card2 {
   width: 100%;
   padding: 20px;
-  /* background: #ffffff; */
   background: #303030;
 
   border-radius: 12px;
@@ -47,7 +46,6 @@
 .box-description {
   padding: 20px;
   min-height: 120px;
-  /* border: solid red; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

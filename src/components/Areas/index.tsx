@@ -5,7 +5,7 @@ const Areas = () => {
   return (
     <div className="areas">
       <div className="box-content">
-        <h1 className="titles">Minhas ares de trabalho</h1>
+        <h1 className="titles">minhas áreas de trabalho</h1>
         <span className="texts">
           Construo aplicações modernas e otimizadas com foco total no usuário.
         </span>

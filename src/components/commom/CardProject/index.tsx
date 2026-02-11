@@ -1,4 +1,3 @@
-import image from "../../../assets/projetos.jpg";
 import { FaGithub } from "react-icons/fa";
 import "./cardProject.css";
 import { FiArrowRight } from "react-icons/fi";
@@ -9,6 +8,7 @@ interface Props {
   text?: string;
   step?: number;
   projects?: boolean;
+  image?: string;
 }
 const CardProject = (props: Props) => {
   const [stepStyle, setStepStyle] = useState(false);
@@ -16,7 +16,7 @@ const CardProject = (props: Props) => {
   return (
     <div className="cardProject" onClick={() => setStepStyle(!stepStyle)}>
       {props.projects && (
-        <img src={image} alt="logo" className="image-card-project" />
+        <img src={props.image} alt="logo" className="image-card-project" />
       )}
 
       <div className="box-description">

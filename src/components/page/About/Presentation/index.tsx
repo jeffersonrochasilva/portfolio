@@ -2,11 +2,20 @@ import "./presentation.css";
 import { FaArrowRight } from "react-icons/fa";
 import image from "../../../../assets/logo3.png";
 const Presentation = () => {
+  function goToWhatsap() {
+    const numero = "+5511917706038"; // DDI + DDD + número (sem espaços)
+    const mensagem =
+      "Olá! estou entrando em contato através do seu portfólio. Gostaria de saber mais sobre suas habilidades e projetos. Podemos conversar?"; // Mensagem pré-definida
+
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, "_blank");
+  }
   return (
     <div className="presentation">
       <div className="presentation-content">
         <span className="titles">Sobre min</span>
-        <p className="presentation-text">
+        <p className="texts">
           Meu nome é Jefferson e minha trajetória na programação começou pela
           curiosidade e vontade de criar soluções úteis. Trabalhei no
           desenvolvimento de sistemas de transporte marítimo e terrestre,
@@ -20,7 +29,7 @@ const Presentation = () => {
           possa aplicar meus conhecimentos, crescer profissionalmente e
           contribuir com projetos que gerem impacto real.
         </p>
-        <button className="button">
+        <button className="button" onClick={() => goToWhatsap()}>
           Entre em contato
           <FaArrowRight style={{ marginLeft: "10px" }} />
         </button>
@@ -30,12 +39,7 @@ const Presentation = () => {
         <div className="box two" style={{ background: "#58CC04" }} />
         <div className="box three" style={{ background: "#58CC04" }} />
         <div className="box four" style={{ background: "#58CC04" }} />
-        <img
-          src={image}
-          alt="imagemaltor"
-          className="image-intial"
-          style={{ right: 180 }}
-        />
+        <img src={image} alt="imagemaltor" className="image-intial" />
       </div>
     </div>
   );

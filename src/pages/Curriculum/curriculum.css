@@ -7,11 +7,14 @@
   justify-content: space-around;
   flex-direction: column;
   gap: 50px;
+  padding: 10px;
+
   /* background : red */
 }
 
 .curriculum-info {
   height: 100px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
