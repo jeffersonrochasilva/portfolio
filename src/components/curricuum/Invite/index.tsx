@@ -1,4 +1,13 @@
 const Invite = () => {
+  function goToWhatsap() {
+    const numero = "+5511917706038"; // DDI + DDD + número (sem espaços)
+    const mensagem =
+      "Olá! estou entrando em contato através do seu portfólio. Gostaria de saber mais sobre suas habilidades e projetos. Podemos conversar?"; // Mensagem pré-definida
+
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, "_blank");
+  }
   return (
     <div
       style={{
@@ -17,7 +26,7 @@ const Invite = () => {
       }}
     >
       <span className="titles">Vamos trabalhar juntos?</span>
-      <div>
+      <div style={{ padding: "0 10px" }}>
         <p className="texts" style={{ color: " white" }}>
           Estou disponível para projetos freelance, oportunidades de trabalho ou
           simplesmente para trocar
@@ -27,7 +36,9 @@ const Invite = () => {
         </p>
       </div>
 
-      <button className="button">Entre em contato</button>
+      <button className="button" onClick={() => goToWhatsap()}>
+        Entre em contato
+      </button>
     </div>
   );
 };

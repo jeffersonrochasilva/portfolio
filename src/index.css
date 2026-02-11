@@ -1,17 +1,21 @@
 :root {
- background: #131F24;
+  background: #131f24;
 }
 
-
-body {
+html, body {
   margin: 0;
   padding: 0;
-  place-items: center;
+  /* place-items: center; */
+/* background: brown */
 }
 
-h1 , p , span, a{
+h1,
+p,
+span,
+a {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 .containers {
   width: 100%;
@@ -20,38 +24,33 @@ h1 , p , span, a{
   align-items: center;
 }
 
-li{
+li {
   font-family: sans-serif;
   font-size: 14px;
-  margin: 5px
+  margin: 5px;
 }
-.titles{
+.titles {
   font-size: 30px;
   color: #fff;
   font-family: "Arial", sans-serif;
 }
-.texts{
-    font-size: 18px;
+.texts {
+  font-size: 18px;
   color: gray;
-  font-family: "Arial", sans-serif;
-  text-align: center;
+  font-weight: 300;
 }
 
 button {
-transition: transform 0.3s ease;
-display: flex;
-align-items: center;
-justify-content: center;
-
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 button:hover {
-  /* border-color: #646cff; */
-    background-color: #FF2A1F;
-   transform: scale(1.2);
+  background-color: #ff2a1f;
+  transform: scale(1.2);
 }
 button:focus,
 button:focus-visible {
   /* outline: 4px auto -webkit-focus-ring-color; */
 }
-
-

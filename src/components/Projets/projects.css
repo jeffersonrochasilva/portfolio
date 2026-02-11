@@ -16,3 +16,10 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.box-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: flex-end;
+}

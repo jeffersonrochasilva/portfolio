@@ -8,7 +8,7 @@ const ProjectsCamp = () => {
       title: "Viana & Lima Advocacia",
       description:
         "Site institucional desenvolvido para escritório de advocacia, com foco em credibilidade, apresentação clara dos serviços jurídicos e facilidade de contato para novos clientes.",
-      link: "https://vianaelima.netlify.app/",
+      link: "https://control-of-proccess.netlify.app/",
       image: Img1,
     },
     {
@@ -22,15 +22,14 @@ const ProjectsCamp = () => {
       title: "Controle de Processos",
       description:
         "Sistema administrativo de controle de processos, com interface intuitiva, gráficos de desempenho e funcionalidades para gerenciamento eficiente.",
-      link: "https://control-of-proccess.netlify.app/",
+      link: "https://vianaelima.netlify.app/",
       image: Img3,
     },
   ];
 
   return (
-    <section className="projects">
+    <section className="projectss">
       <h2 className="titles">Meus Projetos</h2>
-
       <div className="projects-grid">
         {projects.map((item, index) => (
           <div className="project-card" key={index}>
