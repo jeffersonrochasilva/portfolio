@@ -1,7 +1,13 @@
 import image from "../../../public/Assunto.jpg";
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 import "./initial.css";
 const Initial = () => {
+  const navigate = useNavigate();
+  const goToProjects = () => {
+    navigate("/projects");
+  };
   return (
     <div className="initial">
       <div className="content-initial">
@@ -12,10 +18,7 @@ const Initial = () => {
           JavaScript, React, Tailwind e boas práticas de desenvolvimento para
           transformar ideias em soluções reais. Fique à vontade para explorar!
         </p>
-        <button
-          onClick={() => alert("ainda Nào está pronto")}
-          className="button"
-        >
+        <button onClick={() => goToProjects()} className="button">
           Conheça meus projetos <FaArrowRight style={{ marginLeft: "10px" }} />
         </button>
       </div>
